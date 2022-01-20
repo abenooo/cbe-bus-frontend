@@ -1,8 +1,8 @@
 <template>
   <Layout>
-    <div class="my-10 mx-4 text-white bg-gray-800 px-9 py-6">
+    <div class="  text-white bg-gray-900 px-40 py-24">
     <h1 class="animate-bounce text-2xl">About us</h1>
-    <h2 class="text-gray-400">
+    <h2 class="text-gray-400 mb-16">
     About Commercial Bank of Ethiopia
 One of the predominant banks operating in Ethiopia is the Commerical Bank of Ethiopia, AKA CBE. Way before its establishment, the bank was under the State Bank of Ethiopia, which was founded in 1942. That led the way for CBE to be founded separately in 1963, before its unification with the, back then, Addis Ababa Bank in 1974.
 
@@ -14,12 +14,12 @@ CBE is also the first bank to introduce Western Union Money Transfer Services in
 
 The Commercial Bank of Ethiopia has a well-built correspondent relationship with renowned foreign banks like Commerz Bank A.G., Royal Bank of Canada, City Bank, HSBC Bank, it also has a SWIFT bilateral arrangement with more than 700 others banks throughout the world.
     </h2>
-     </div>
+     <!-- </div> -->
 
-    <div class="flex items-center  justify-center mx-5">
-<div class="w-full  mb-2 justify-center rounded-lg text-white bg-gray-800">
-   <h3 class="text-white p-3 md:text-2xl lg:text-2xl text-lg"></h3>
-   <div class="p-5 pt-1 flex-wrap  flex items-center gap-2 justify-center">
+    <!-- <div class="flex items-center  justify-center mx-5 my-5">
+<div class="w-full  mb-2 justify-center rounded-lg text-white bg-gray-800"> -->
+   <h3 class="text-white  md:text-2xl lg:text-2xl text-lg text-center animate-bounce">Status</h3>
+   <div class=" flex-wrap  flex items-center gap-2 justify-center ">
       <div class="bg-gradient-to-r flex-auto  w-42 h-42  from-gray-800 to-gray-600    shadow-lg    rounded-lg">
          <div class="md:p-7 p-4">
             <h3 class="text-sm  text-gray-400  text-center">Number of Branch</h3>
@@ -53,8 +53,9 @@ The Commercial Bank of Ethiopia has a well-built correspondent relationship with
          </div>
       </div>
    </div>
-</div>
-</div>
+    </div>
+<!-- </div>
+</div> -->
  
 
   </Layout>
