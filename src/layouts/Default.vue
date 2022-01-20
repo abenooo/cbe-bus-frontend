@@ -79,7 +79,7 @@
                     </div>
                 </div>
                  <li>
-                    <g-link to="/login" class="text-copy-primary hover:text-gray-300 border-2 py-2 px-3 rounded bg-green-700 text-white capitalize ml-5">SignIn</g-link>
+                    <g-link to="/login" class="text-copy-primary hover:text-gray-300 border-2 py-2 px-5 rounded-2xl bg-green-700 text-white capitalize ml-5">SignIn</g-link>
                 </li>
             </ul>
         </nav>

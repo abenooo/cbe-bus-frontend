@@ -35,7 +35,7 @@
                             <label class="font-semibbold leading-none text-gray-800">Travel Date</label>
                             <input type="date"  class="leading-none text-gray-600 p-3 focus:outline-none focus:bordet-blue-700 mt-4 border-2 rounded">
                         </div>
-                        <button class="w-full md:w-20 font-semibold leading-none text-white py-4 px-10 bg-green-700 rounded hover:bg-green-600 focus:ring-2 focus:ring-offset-2 focus:ring-green-700 focus:outline-none md:mx-5 mt-9" >
+                        <button class="w-full md:w-auto font-semibold leading-none text-white py-4 px-10 bg-green-700 rounded hover:bg-green-600 focus:ring-2 focus:ring-offset-2 focus:ring-green-700 focus:outline-none md:mx-5 mt-9" >
                             Search
                         </button>
                     </div>
