@@ -1,39 +1,34 @@
 <template>
 <Layout>
-     <div class="w-full md:px-44 mt-16  border-t-2 border-b-0 pt-2 overflow-x-auto">
-         <ul class="flex  gap-2">
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900" href="" >Habesha Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Zemen Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Golden Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Abay Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Selam Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Ethio Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Yegna Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Sky Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Gada Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Oda Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Walia Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Noah Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Dreamliner Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Ghion Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">FM Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Limalimo Bus</a></li>
-         </ul>
-     </div>
-     <div class="w-full md:px-44 p-5">
+     
+     <div class="w-full md:px-44 p-5 mt-0">
          <form action="" class="p-6 md:p-16">
                   <div class="md:flex items-center">
-                        <div class="w-full md:w-1/3 flex flex-col ">
-                            <label class="font-semibbold leading-none text-gray-800">Departure</label>
-                            <input placeholder="Select your departure location" type="text" required class="leading-none text-gray-50 p-3 focus:outline-none focus:bordet-blue-700 mt-4 border-2 rounded">
+                         <div class="w-full md:w-1/3 flex flex-col md:ml-6 ">
+                            <label class="font-semibbold leading-none text-gray-500">Departure</label>
+                            <!-- <input type="selec" placeholder="Select your departure location" class="leading-none text-gray-600 p-3 focus:outline-none focus:border-green-600 mt-4 border-2 rounded"> -->
+                            <select name="destination" id="" class="bg-white leading-none text-gray-600 p-3 focus:outline-none focus:border-green-600 mt-4 border-2 rounded">
+                                <option value="" selected>Select your departure</option>
+                                <option value="addis abeba"  class="">Addis Abeba</option>
+                                <option value="Hawassa">Hawassa</option>
+                                <option value="Bahir Dar">Bahir Dar</option>
+                                <option value="Adama">Adama</option>
+                            </select>
                         </div>
                         <div class="w-full md:w-1/3 flex flex-col md:ml-6 ">
-                            <label class="font-semibbold leading-none text-gray-800">Destination</label>
-                            <input type="text" placeholder="Select your departure location" class="leading-none text-gray-50 p-3 focus:outline-none focus:bordet-blue-700 mt-4 border-2 rounded">
+                            <label class="font-semibbold leading-none text-gray-600">Destination</label>
+                            <!-- <input type="selec" placeholder="Select your departure location" class="leading-none text-gray-600 p-3 focus:outline-none focus:border-green-600 mt-4 border-2 rounded"> -->
+                            <select name="destination" id="" class="bg-white leading-none text-gray-500 p-3 focus:outline-none focus:border-green-600 mt-4 border-2 rounded">
+                                <option value="" selected>Select your destination</option>
+                                <option value="addis abeba"  class="">Addis Abeba</option>
+                                <option value="Hawassa">Hawassa</option>
+                                <option value="Bahir Dar">Bahir Dar</option>
+                                <option value="Adama">Adama</option>
+                            </select>
                         </div>
                          <div class="w-full md:w-1/3 flex flex-col md:ml-6 ">
-                            <label class="font-semibbold leading-none text-gray-800">Travel Date</label>
-                            <input type="date"  class="leading-none text-gray-600 p-3 focus:outline-none focus:bordet-blue-700 mt-4 border-2 rounded">
+                            <label class="font-semibbold leading-none text-gray-500">Travel Date</label>
+                            <input type="date"  class="leading-none text-gray-600 p-3 focus:outline-none focus:bordet-blue-600 mt-4 border-2 rounded">
                         </div>
                         <button class="w-full md:w-auto font-semibold leading-none text-white py-4 px-10 bg-green-700 rounded hover:bg-green-600 focus:ring-2 focus:ring-offset-2 focus:ring-green-700 focus:outline-none md:mx-5 mt-9" >
                             Search
