@@ -1,6 +1,6 @@
 <template>
 <div class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen" :class="theme">
-    <header class="top-0 left-0 z-40 fixed w-full border-t-14 border-green-700">
+    <header class="top-0 left-0 z-40 fixed w-full border-t-14 border-green-700 pl-3">
         <nav class="container mx-auto flex flex-wrap justify-between items-center py-8">
             <div>
                 <g-link v-if="theme === 'theme-light'" to="/" @click.native="scrollToTop">
@@ -10,38 +10,36 @@
                     <g-image src="../../static/logo_dark_mode.svg" class="w-40" alt="logo" />
                 </g-link>
             </div>
-            <div class="block lg:hidden">
-                <button @click="toggle" class="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600" data-cypress="hamburger">
+            <div class="block lg:hidden pr-10">
+                <button @click="toggle" class=" flex items-center px-3 py-2 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600" data-cypress="hamburger">
                     <svg class="current-color h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="gray" /></svg>
                 </button>
             </div>
-            <ul class="uppercase tracking-wide font-bold w-full block flex-grow lg:space-x-8 space-y-6 lg:space-y-0 lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0" :class="isOpen ? 'block': 'hidden'">
-                <li>
+            <ul class="uppercase tracking-wide font-bold w-full block flex-grow lg:space-x-8 space-y-6 lg:space-y-0 lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0 " :class="isOpen ? 'block': 'hidden'">
+                <li class="ml-5">
                     <theme-switcher :theme="theme" @themeChanged="updateTheme" />
                 </li>
                 <li>
-                    <g-link to="/" class="text-copy-primary hover:text-gray-600">Bus</g-link>
+                    <g-link to="/" class="text-copy-primary hover:text-gray-600 ml-5">Bus</g-link>
                 </li>
                 <li>
-                    <g-link to="/contact" class="text-copy-primary hover:text-gray-600">Contact</g-link>
+                    <g-link to="/contact" class="text-copy-primary hover:text-gray-600 ml-5">Contact</g-link>
+                </li>
+               
+                <li>
+                    <g-link to="/testimona" class="text-copy-primary hover:text-gray-600 ml-5">Testimony</g-link>
                 </li>
                 <li>
-                    <g-link to="/login" class="text-copy-primary hover:text-gray-600">Login</g-link>
+                    <g-link to="/about" class="text-copy-primary hover:text-gray-600 ml-5">About</g-link>
                 </li>
-                <li>
-                    <g-link to="/testimona" class="text-copy-primary hover:text-gray-600">Testimony</g-link>
-                </li>
-                <li>
-                    <g-link to="/about" class="text-copy-primary hover:text-gray-600">About</g-link>
-                </li>
-                <li>
+                <!-- <li>
                     <g-link to="/language" class="text-copy-primary hover:text-gray-600">Language <svg class="inline w-4 h-4 dark:text-white ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path>
                         </svg>
                     </g-link>
-                </li>
-                <div class="relative text-left inline-blockflex-col mx-auto my-7 mt-5 uppercase tracking-wide font-bold">
+                </li> -->
+                <!-- <div class="relative text-left inline-blockflex-col mx-auto my-7 mt-5 uppercase tracking-wide font-bold">
                     <button @click="open = !open" class="p-3 bg-gray-10 flex items-center uppercase tracking-wide"><a>Choose Bus</a>
                         <svg class="w-4 h-4 dark:text-white ml-3 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path>
@@ -53,7 +51,36 @@
                         <a class="block p-3 border-b border-gray-300 hover:border-gray-800" href="#">Zemen </a>
                         <a class="block p-3 border-b border-gray-300 hover:border-gray-800" href="#">Golden </a>
                     </div>
+                </div> -->
+                 <div class="relative text-left inline-blockflex-col mx-auto my-7 mt-5 uppercase tracking-wide font-bold ml-2">
+                    <button @click="open = !open" class="p-3 bg-gray-10 flex items-center uppercase tracking-wide capitalize"><a>Manage Booking</a>
+                        <svg class="w-4 h-4 dark:text-white ml-3 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path>
+                        </svg>
+                    </button>
+                    <div v-if="open" class="absolute mt-2 w-full bg-gray-300 border-t border-gray-300 rounded" >
+                        <a class="block p-3 border-b border-gray-300 hover:border-gray-800 capitalize text-black font-semibold" href="#">Bus Tickets </a>
+                        <a class="block p-3 border-b border-gray-300 hover:border-gray-800 capitalize  text-black font-semibold" href="#">Cancel Booking </a>
+                        <a class="block p-3 border-b border-gray-300 hover:border-gray-800 capitalize  text-black font-semibold" href="#">Change Travel Date </a>
+                        <a class="block p-3 border-b border-gray-300 hover:border-gray-800 capitalize text-black font-semibold" href="#">Show My Tickets </a>
+                    </div>
                 </div>
+                  <div class="relative text-left inline-blockflex-col mx-auto my-7 mt-5 uppercase tracking-wide font-bold">
+                    <button @click="languageOpen = !languageOpen" class="p-3 bg-gray-10 flex items-center uppercase tracking-wide capitalize"><a>Language</a>
+                        <svg class="w-4 h-4 dark:text-white ml-3 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path>
+                        </svg>
+                    </button>
+                    <div v-if="languageOpen" class="absolute mt-2 w-36 bg-gray-300 border-t border-gray-300 rounded" >
+                        <a class="block p-3 border-b border-gray-300 hover:border-gray-800 capitalize text-black font-semibold" href="#">English (Eng) </a>
+                        <a class="block p-3 border-b border-gray-300 hover:border-gray-800 capitalize  text-black font-semibold" href="#">Amharic (Amh) </a>
+                        <a class="block p-3 border-b border-gray-300 hover:border-gray-800 capitalize  text-black font-semibold" href="#">Oromic (Oro) </a>
+                        <a class="block p-3 border-b border-gray-300 hover:border-gray-800 capitalize text-black font-semibold" href="#">Tigray (Tig) </a>
+                    </div>
+                </div>
+                 <li>
+                    <g-link to="/login" class="text-copy-primary hover:text-gray-300 border-2 py-2 px-5 rounded-2xl bg-green-700 text-white capitalize ml-5">SignIn</g-link>
+                </li>
             </ul>
         </nav>
     </header>
@@ -190,6 +217,7 @@ export default {
             isOpen: false,
             theme: '',
             open: false,
+            languageOpen: false,
         }
     },
     methods: {

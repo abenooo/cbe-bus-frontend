@@ -13,6 +13,6 @@
     "gridsome": "^0.7.0",
     "postcss": "7",
     "tailwind": "^4.0.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }
