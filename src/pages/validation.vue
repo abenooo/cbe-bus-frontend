@@ -10,12 +10,12 @@
             </p>
             <div class="mb-4">
                 <label class="block text-sm mb-4">Select Departure
-                    <input class="appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" placeholder="Email" />
+                    <input class="appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" placeholder="Select Departure" />
                 </label>
             </div>
             <div class="mb-3">
                 <label class="block text-sm mb-4">Select Destination
-                    <input class="appearance-none border w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" type="password" placeholder="Password" />
+                    <input class="appearance-none border w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" type="password" placeholder="Select Destination" />
                 </label>
             </div>
             <div class="mb-4">
@@ -23,6 +23,25 @@
                     <input class="appearance-none border w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" type="date" placeholder="Please Select Arrival" />
                 </label>
             </div>
+            <div class="mb-4">
+                <label class="block text-sm mb-4">Return Date
+                    <input class="appearance-none border w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" type="date" placeholder="Please Select Arrival" />
+                </label>
+            </div>
+            <div class="main flex border rounded-full overflow-hidden m-0 select-none">
+                <div class="title py-3 my-auto px-5 bg-blue-500 text-white text-sm font-semibold mr-3">Travel Type</div>
+                <label class="flex radio p-2 cursor-pointer">
+                    <input class="my-auto transform scale-125" type="radio" name="sfg" />
+                    <div class="title px-2">One Way</div>
+                </label>
+
+                <label class="flex radio p-2 cursor-pointer">
+                    <input class="my-auto transform scale-125" type="radio" name="sfg" />
+                    <div class="title px-2">Rounded</div>
+                </label>
+
+            </div>
+
             <div class="flex flex-row">
                 <a href="/validation"> <button class="mt-8 mb-4 py-2 px-14 rounded-full text-center bg-green-500 text-white tracking-widest hover:bg-green-700 transition duration-75">Book Now <svg class="inline ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -49,12 +68,12 @@
                 </div>
             </div>
         </div>
-         <div class="w-full md:w-1/3 bg-gray-700 p-6 text-white mt-10">
+        <div class="w-full md:w-1/3 bg-gray-700 p-6 text-white mt-10">
             <p class="mb-8 text-3xl flex items-center">
-             <h1 class="text-center text-2xl mb-2">About Habesha Bus</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel iste impedit illum nihil modi, rerum consectetur veritatis accusamus laudantium dolores asperiores ipsum nostrum repellat dolore minus optio perspiciatis? Similique Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel iste impedit illum nihil modi, rerum consectetur veritatis accusamus laudantium dolores asperiores ipsum nostrum repellat dolore minus optio perspiciatis? Similique..</p>
-            <p class="text-sm base mt-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore architecto molestias necessitatibus, quis similique earum velit alias aliquam accusamus reiciendis cum nulla, ipsam est. Cumque voluptas aperiam eligendi esse odio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore architecto molestias necessitatibus, quis similique earum velit alias aliquam accusamus reiciendis cum nulla, ipsam est. Cumque voluptas aperiam eligendi esse odio.</p>
-            <p class="text-sm base mt-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore architecto molestias necessitatibus, quis similique earum velit alias aliquam accusamus reiciendis cum nulla, ipsam est. Cumque voluptas aperiam eligendi esse odio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore architecto molestias necessitatibus, quis similique earum velit alias aliquam accusamus reiciendis cum nulla, ipsam est. Cumque voluptas aperiam eligendi esse odio.</p>
+                <h1 class="text-center text-2xl mb-2">About Habesha Bus</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel iste impedit illum nihil modi, rerum consectetur veritatis accusamus laudantium dolores asperiores ipsum nostrum repellat dolore minus optio perspiciatis? Similique Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel iste impedit illum nihil modi, rerum consectetur veritatis accusamus laudantium dolores asperiores ipsum nostrum repellat dolore minus optio perspiciatis? Similique..</p>
+                <p class="text-sm base mt-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore architecto molestias necessitatibus, quis similique earum velit alias aliquam accusamus reiciendis cum nulla, ipsam est. Cumque voluptas aperiam eligendi esse odio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore architecto molestias necessitatibus, quis similique earum velit alias aliquam accusamus reiciendis cum nulla, ipsam est. Cumque voluptas aperiam eligendi esse odio.</p>
+                <p class="text-sm base mt-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore architecto molestias necessitatibus, quis similique earum velit alias aliquam accusamus reiciendis cum nulla, ipsam est. Cumque voluptas aperiam eligendi esse odio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore architecto molestias necessitatibus, quis similique earum velit alias aliquam accusamus reiciendis cum nulla, ipsam est. Cumque voluptas aperiam eligendi esse odio.</p>
 
         </div>
     </form>
