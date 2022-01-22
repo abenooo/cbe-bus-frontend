@@ -11,19 +11,7 @@
             </p>
             <div class="mb-4">
                 <label class="block text-sm mb-4">Select Departure
-<<<<<<< HEAD
                     <input class="appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" placeholder="Select Departure" />
-=======
-                    <!-- <input class="appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="" placeholder="Email" /> -->
-                    <select name="departure" id="" class="w-full py-2 px-3 text-black">
-                        <option value="" disabled>Departure</option>
-                        <option value="addis abeba">Addis Abeba</option>
-                        <option value="Hawassa">Hawassa</option>
-                        <option value="Bahir Dar">Bahir Dar</option>
-                        <option value="Adama">Adama</option>
-
-                    </select>
->>>>>>> b561422f7a83fcd2808a9e8a28426ba84fee3508
                 </label>
             </div>
             <div class="mb-3">
@@ -81,11 +69,7 @@
                 </div> -->
             </div>
         </div>
-<<<<<<< HEAD
         <div class="w-full md:w-1/3 bg-gray-700 p-6 text-white mt-10">
-=======
-         <div class="w-full md:w-1/3  p-6 text-white mt-10">
->>>>>>> b561422f7a83fcd2808a9e8a28426ba84fee3508
             <p class="mb-8 text-3xl flex items-center">
                 <h1 class="text-center text-2xl mb-2">About Habesha Bus</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel iste impedit illum nihil modi, rerum consectetur veritatis accusamus laudantium dolores asperiores ipsum nostrum repellat dolore minus optio perspiciatis? Similique Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel iste impedit illum nihil modi, rerum consectetur veritatis accusamus laudantium dolores asperiores ipsum nostrum repellat dolore minus optio perspiciatis? Similique..</p>
