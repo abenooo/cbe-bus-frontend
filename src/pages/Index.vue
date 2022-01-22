@@ -1,8 +1,8 @@
 <template>
 <Layout>
      
-     <div class="w-full md:px-44 p-5 mt-0">
-         <form action="" class="p-6 md:p-16">
+     <div class="w-full md:px-44 p-5 mt-0 ">
+         <form action="" class="p-6 md:p-16  shadow-md ">
                   <div class="md:flex items-center">
                          <div class="w-full md:w-1/3 flex flex-col md:ml-6 ">
                             <label class="font-semibbold leading-none text-gray-500">Departure</label>
@@ -14,6 +14,14 @@
                                 <option value="Bahir Dar">Bahir Dar</option>
                                 <option value="Adama">Adama</option>
                             </select>
+                        </div>
+                        <div class="pt-5 pl-5 text-green-500 hover:text-gray-900">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-6 " fill="none" viewBox="0 0 24 16" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-6" fill="none" viewBox="0 0 24 16" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+                            </svg>
                         </div>
                         <div class="w-full md:w-1/3 flex flex-col md:ml-6 ">
                             <label class="font-semibbold leading-none text-gray-600">Destination</label>
@@ -30,6 +38,12 @@
                             <label class="font-semibbold leading-none text-gray-500">Travel Date</label>
                             <input type="date"  class="leading-none text-gray-600 p-3 focus:outline-none focus:bordet-blue-600 mt-4 border-2 rounded">
                         </div>
+
+                        <div class="w-full md:w-1/3 flex flex-col md:ml-6 ">
+                            <label class="font-semibbold leading-none text-gray-500">Return Date (Opitonal)</label>
+                            <input type="date" class="leading-none text-gray-600 p-3 focus:outline-none focus:bordet-blue-600 mt-4 border-2 rounded">
+                        </div>
+
                         <button class="w-full md:w-auto font-semibold leading-none text-white py-4 px-10 bg-green-700 rounded hover:bg-green-600 focus:ring-2 focus:ring-offset-2 focus:ring-green-700 focus:outline-none md:mx-5 mt-9" >
                             Search
                         </button>
