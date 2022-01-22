@@ -1,25 +1,6 @@
 <template>
 <Layout>
-        <div class="w-full px-44 mt-16  border-t-2 border-b-2 pt-2">
-         <ul class="flex  gap-2">
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900" href="" >Habesha Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Zemen Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Golden Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Abay Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Selam Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Ethio Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Yegna Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Sky Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Gada Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Oda Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Walia Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Noah Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Dreamliner Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Ghion Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">FM Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Limalimo Bus</a></li>
-         </ul>
-     </div>
+
     <form class="bg-gray-900 shadow-xl  flex flex-wrap justify-center mx-21 md:flex-2  sm:flex-1">
         <div class="w-full md:w-1/3 bg-gray-900 p-12 text-white mt-10">
             <p class="mb-8 text-3xl flex items-center">
