@@ -14,16 +14,10 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
     siteName: 'CBE Bus',
-    plugins: [{
-        use: '@gridsome/source-filesystem',
-        options: {
-            typeName: 'BlogPost',
-            path: './content/blog/**/*.md',
-        },
-    }, ],
-    templates: {
-        BlogPost: '/blog/:slug',
-    },
+    siteDescription:'cbe online bus ticketing system',
+    // templates: {
+    //     BlogPost: '/blog/:slug',
+    // },
     css: {
         loaderOptions: {
             postcss: {
