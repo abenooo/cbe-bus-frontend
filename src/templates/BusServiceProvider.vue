@@ -41,6 +41,24 @@
                     <input class="rounded-lg appearance-none border w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" type="date" placeholder="Please Select Arrival" />
                 </label>
             </div>
+             <div class="mb-4" id="ifYes" style="visibility:hidden">
+                <label class="block text-sm mb-4">Return Date
+                    <input id='yes' name='yes' class="appearance-none border w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" type="date" placeholder="Please Select Arrival" />
+                </label>
+            </div>
+              <div class="main flex border rounded-full overflow-hidden m-0 select-none">
+                <div class="title py-3 my-auto px-5 bg-blue-500 text-white text-sm font-semibold mr-3">Travel Type</div>
+                <label class="flex radio p-2 cursor-pointer">
+                    <input class="my-auto transform scale-125" type="radio"  @click="yesnoCheck();" name="yesno" id="noCheck" />
+                    <div class="title px-2" >One Way</div>
+                </label>
+
+                <label class="flex radio p-2 cursor-pointer">
+                    <input class="my-auto transform scale-125" type="radio"  @click="yesnoCheck();" name="yesno" id="yesCheck" />
+                    <div class="title px-2" >Rounded</div>
+                </label>
+
+            </div>
             <div class="flex flex-row">
                 <a href=""> <button class="mt-6 mb-4 py-2 px-14 rounded-full text-center bg-green-700 text-white  hover:bg-green-500 transition duration-75">Book Now </button></a>
                 <g-link to="/" class="ml-7"> <button class="mt-6 mb-4 py-2 px-14 rounded-full text-center bg-green-700 text-white  hover:bg-green-500 transition duration-75">Return Back</button>
@@ -74,13 +92,34 @@
     </form>
 </Layout>
 </template>
+<script>
+
+export default ({
+    setup() {
+        
+    },
+    data(){
+      return {
+    } 
+    } ,
+    methods:{
+     yesnoCheck() {
+    if (document.getElementById('yesCheck').checked) {
+        document.getElementById('ifYes').style.visibility = 'visible';
+    }
+    else document.getElementById('ifYes').style.visibility = 'hidden';
+
+}
+    }
+})
+</script>
 
 <page-query>
     query($id:ID!){
         busServiceProvider(id:$id){
                 id
                 name
-                slogan
+                
                 path
                 website
                 city
