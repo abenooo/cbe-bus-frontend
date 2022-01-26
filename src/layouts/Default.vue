@@ -33,39 +33,27 @@
                 <li>
                     <g-link to="/about" class="text-copy-primary hover:text-gray-600 ml-5">About</g-link>
                 </li>
-                    <button @click="busOpen = !busOpen;languageOpen=false;open=false;" class="p-3 bg-gray-10 flex items-center uppercase tracking-wide"><a>Choose Bus</a>
+                    <button @click="busOpen = !busOpen;languageOpen=false;open=false;profileOpen = false;" class="p-3 bg-gray-10 flex items-center uppercase tracking-wide hover:text-gray-500"><a>Choose Bus</a>
                         <svg class="w-4 h-4 dark:text-white ml-3 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path>
                         </svg>
                     </button>
-                <!-- <div class="relative text-left inline-blockflex-col mx-auto my-7 mt-5 uppercase tracking-wide font-bold">
-                    <button @click="open = !open" class="p-3 bg-gray-10 flex items-center uppercase tracking-wide"><a>Choose Bus</a>
-                        <svg class="w-4 h-4 dark:text-white ml-3 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path>
-                        </svg>
-                    </button>
-                    <div v-if="open" class="absolute mt-2 w-full bg-gray-300 border-t border-gray-300">
-                        <a class="block p-3 border-b border-gray-300 hover:border-gray-800" href="#">Habesha </a>
-                        <a class="block p-3 border-b border-gray-300 hover:border-gray-800" href="#">Yegna </a>
-                        <a class="block p-3 border-b border-gray-300 hover:border-gray-800" href="#">Zemen </a>
-                        <a class="block p-3 border-b border-gray-300 hover:border-gray-800" href="#">Golden </a>
-                    </div>
-                </div> -->
+   
                  <div class="relative text-left inline-blockflex-col mx-auto my-7 mt-5 uppercase tracking-wide font-bold ml-2">
-                    <button @click="open = !open;languageOpen=false;busOpen=false" class="p-3 bg-gray-10 flex items-center uppercase tracking-wide capitalize"><a>Manage Booking</a>
+                    <button @click="open = !open;languageOpen=false;busOpen=false;profileOpen = false;" class="p-3 bg-gray-10 flex items-center uppercase tracking-wide capitalize"><a>Manage Booking</a>
                         <svg class="w-4 h-4 dark:text-white ml-3 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path>
                         </svg>
                     </button>
                     <div v-if="open" class="absolute mt-2 w-full bg-gray-300 border-t border-gray-300 rounded" >
-                        <a class="block p-3 border-b border-gray-300 hover:border-gray-800 capitalize text-black font-semibold" href="#">Bus Tickets </a>
+                        <g-link class="block p-3 border-b border-gray-300 hover:border-gray-800 capitalize text-black font-semibold" to="/">Bus Tickets </g-link>
                         <a class="block p-3 border-b border-gray-300 hover:border-gray-800 capitalize  text-black font-semibold" href="#">Cancel Booking </a>
                         <a class="block p-3 border-b border-gray-300 hover:border-gray-800 capitalize  text-black font-semibold" href="#">Change Travel Date </a>
                         <a class="block p-3 border-b border-gray-300 hover:border-gray-800 capitalize text-black font-semibold" href="#">Show My Tickets </a>
                     </div>
                 </div>
                   <div class="relative text-left inline-blockflex-col mx-auto my-7 mt-5 uppercase tracking-wide font-bold">
-                    <button @click="languageOpen = !languageOpen;open=false;busOpen=false" class="p-3 bg-gray-10 flex items-center uppercase tracking-wide capitalize"><a>Language</a>
+                    <button @click="languageOpen = !languageOpen;open=false;busOpen=false;profileOpen = false;" class="p-3 bg-gray-10 flex items-center uppercase tracking-wide capitalize"><a>Language</a>
                         <svg class="w-4 h-4 dark:text-white ml-3 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path>
                         </svg>
@@ -77,16 +65,26 @@
                         <a class="block p-3 border-b border-gray-300 hover:border-gray-800 capitalize text-black font-semibold" href="#">Tigray (Tig) </a>
                     </div>
                 </div>
-                 <li>
-                    <g-link to="/login" class="text-copy-primary hover:bg-green-400 border-2 py-2 px-5 rounded-2xl bg-green-700 text-white capitalize ml-5">SignIn</g-link>
-                </li>
+                
+
+                  <div class="relative text-left inline-block flex-col mx-auto my-7 mt-5 uppercase tracking-wide font-bold">
+                        <img v-if="loggedIn"  @click="profileOpen = !profileOpen; languageOpen=false; open=false;busOpen=false" class="inline object-cover w-12 h-12 mr-2 rounded-full cursor-pointer" src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Profile image"/>
+                        <div v-if="profileOpen" class="absolute mt-2 w-44 bg-gray-300 border-t border-gray-300 rounded" >
+                            <g-link class="block p-3 border-b border-gray-300 hover:border-gray-700 capitalize text-gray-800 font-normal" to="/">Change Profile </g-link>
+                            <g-link class="block p-3 border-b border-gray-300 hover:border-gray-700 capitalize  text-gray-800 font-normal" to="/">Change Password </g-link>
+                            <p class="block p-3  capitalize hover:text-green-800 text-gray-700 font-bold cursor-pointer"  @click="loggedIn=false;profileOpen=false">Logout </p>
+                        </div>
+                  </div>
+                  <li v-if="!loggedIn">
+                        <g-link to="/login" class="text-copy-primary hover:bg-green-400 border-1 shadow-sm py-2 px-4 rounded-r-full bg-green-700 text-white capitalize ">SignIn</g-link>
+                  </li>
             </ul>
         </nav>
     </header>
   <div v-if="busOpen" class="w-full md:px-44 mt-28  border-t-2 border-b-0 pt-2 overflow-x-auto">
          <ul class="flex  gap-2">
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900" href="" >Habesha Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Zemen Bus</a></li>|
+             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center" v-for="bsp in $page.allBusServiceProvider.edges" :key="bsp.node.id"><g-link class="text-gray-900" :to="{ path: ('/BusServiceProvider/') + bsp.node.id }"  >{{bsp.node.name}} <span class="px-1">|</span></g-link></li>
+             <!-- <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Zemen Bus</a></li>|
              <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Golden Bus</a></li>|
              <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Abay Bus</a></li>|
              <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Selam Bus</a></li>|
@@ -100,7 +98,7 @@
              <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Dreamliner Bus</a></li>|
              <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Ghion Bus</a></li>|
              <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">FM Bus</a></li>|
-             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Limalimo Bus</a></li>
+             <li class="hover:text-green-700 border-b-2 border-white hover:border-green-700 px-2 py-0 text-center"><a class="text-gray-900"  href="">Limalimo Bus</a></li> -->
          </ul>
      </div>
 
@@ -202,14 +200,35 @@
             </div>
         </div>
     </footer>
-
-
 </div>
 </template>
 
 <static-query>
     query { metadata { siteName } }
 </static-query>
+
+<page-query>
+    query{
+        allBusServiceProvider{
+            edges{
+                node{
+                id
+                name
+                slogan
+                path
+                website
+                city
+                phone
+                email
+                description
+                logo{
+                    url
+                }
+                }
+            }
+        }
+    }
+</page-query>
 
 <script>
 import ThemeSwitcher from '../components/ThemeSwitcher'
@@ -227,7 +246,9 @@ export default {
             theme: '',
             open: false,
             languageOpen: false,
-            busOpen:false
+            busOpen:false,
+            loggedIn:true,
+            profileOpen:false
         }
     },
     methods: {
@@ -239,6 +260,9 @@ export default {
         },
         updateTheme(theme) {
             this.theme = theme
+        },
+        logout(){
+            this.loggedIn=false;
         }
     }
 }

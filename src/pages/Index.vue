@@ -1,7 +1,7 @@
 <template>
 <Layout>
      
-     <div class="w-full md:px-44 p-5 mt-0 ">
+     <div class="w-full md:px-44 p-3 mt-0  border-t-2">
          <form action="" class="p-6 md:p-16  shadow-md ">
                   <div class="md:flex items-center">
                          <div class="w-full md:w-1/3 flex flex-col md:ml-6 ">
@@ -45,12 +45,12 @@
                         <!-- round way selection -->
                         <div class="p-2 w-full md:w-1/5 flex flex-col ml-6">
                             <label class="font-semibbold leading-none text-gray-500 block">Round</label>
-                            <div class="pt-4 pb-1">
-                                <input type="radio" id="one" value="oneWay" v-model="roundValue"  class="mr-3 text-gray-500" @click="()=>{twoWay=false}">
+                            <div class="pt-3 pb-1">
+                                <input type="radio" id="one" value="oneWay" v-model="roundValue"  class="mr-3 text-gray-500 transform scale-125" @click="()=>{twoWay=false}">
                                 <label for="one" class="text-gray-500">One Way</label>
                             </div>
                             <div>
-                                <input type="radio" id="two" value="twoWay" v-model="roundValue" class="mr-3 text-gray-500" @click="()=>{twoWay=true}">
+                                <input type="radio" id="two" value="twoWay" v-model="roundValue" class="mr-3 text-gray-500 transform scale-125"  @click="()=>{twoWay=true}">
                                 <label for="two" class="text-gray-500">Two Way</label>
                             </div>
                         </div>

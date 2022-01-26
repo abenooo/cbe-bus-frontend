@@ -25,4 +25,17 @@ module.exports = {
             },
         },
     },
+    plugins:[
+        {
+            use: '@gridsome/source-strapi',
+            options: {
+              apiURL:process.env.STRAPI_URL,
+              queryLimit: 1000, // Defaults to 100
+              plural: true,
+              contentTypes: ['transport-service-providers','bus-details','booked-tickets','route-details','route-lists','seat-types'],
+            //   singleTypes: ['seats'],
+      
+            }
+          },
+    ]
 };

@@ -2,8 +2,8 @@
 <Layout>
     <!-- <div class=" w-full "> -->
         <!-- <div class="bg-red-900 h-96"></div> -->
-            <div class=" w-full shadow rounded sm:p-10 md:px-6 mt-12 justify-center flex">
-                <form method="post" action="">
+            <div class=" w-1/2 shadow-lg rounded sm:p-7 sm:pt-10  mt-12 justify-center flex mx-auto">
+                <form method="post" action="" class="">
                 <p class="text-3xl lg:text-4xl font-bold leading-7 text-center text-gray-600 underline">Contact Us</p>
 
                     <div class="md:flex items-center mt-12">
